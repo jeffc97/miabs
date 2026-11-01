@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Add your voice to the Michigan Mosaic, a MIABS and At Large convention time capsule. Explore recordings, soundtracks, audio and video keepsakes, bundles, and early-bird details.">
+  <meta name="color-scheme" content="light">
+  <title>The Michigan Mosaic | MIABS Convention 2026</title>
+  <style>
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: #242321;
+  background: #f3efe8;
+  --ink: #242321;
+  --red: #8b2318;
+  --red-dark: #581b16;
+  --cream: #fff9ed;
+  --line: #c4b7a6;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 1.1875rem; line-height: 1.65; overflow-wrap: anywhere; }
+a { color: var(--red); text-decoration: underline; text-underline-offset: .2em; text-decoration-thickness: .09em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: .16em; }
+a:focus, [tabindex='-1']:focus { outline: .2rem solid #005fcc; outline-offset: .25rem; }
+a:focus { color: #171717 !important; background: #ffeb99 !important; text-decoration: underline; }
+p { margin: 0 0 1.1rem; }
+h1, h2, h3 { line-height: 1.2; text-wrap: balance; overflow-wrap: anywhere; }
+h1 { margin: 0 0 1.35rem; font-size: 3.1rem; letter-spacing: -.035em; max-width: 23ch; }
+h2 { margin: 0 0 1rem; color: var(--red-dark); font-size: 2rem; letter-spacing: -.02em; }
+h3 { margin: 1.8rem 0 .8rem; font-size: 1.4rem; }
+[id] { scroll-margin-top: 1.5rem; }
+.wrap { width: min(100% - 3rem, 72rem); margin-inline: auto; }
+.skip-link { position: absolute; left: 1rem; top: .65rem; transform: translateY(-250%); z-index: 10; padding: .75rem 1rem; background: #fff; }
+.skip-link:focus { position: fixed; transform: none; }
+.site-header { background: #fff; border-top: .5rem solid var(--red); border-bottom: 1px solid var(--line); }
+.masthead { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem 2rem; padding-block: 1.5rem; }
+.brand { display: flex; align-items: center; gap: 1rem; color: var(--ink); text-decoration: none; max-width: 28rem; }
+.brand-mark { font-size: 1.65rem; font-weight: 800; letter-spacing: -.04em; padding-right: 1rem; border-right: .2rem solid var(--red); color: var(--red); }
+.brand-name { font-size: 1rem; font-weight: 700; line-height: 1.35; }
+.site-nav ul, .page-nav ul { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; list-style: none; padding: 0; margin: 0; }
+.site-nav { font-size: 1rem; }
+.site-nav a { display: inline-block; padding: .6rem .1rem; font-weight: 700; color: var(--ink); }
+.site-nav a[aria-current='page'] { color: var(--red); text-decoration-thickness: .2em; }
+main { background: #fff; }
+.hero { padding-block: 3.6rem 3rem; border-bottom: .35rem solid var(--red); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, .44fr); gap: 3rem; align-items: center; }
+.eyebrow { font-size: 1rem; font-weight: 700; letter-spacing: .065em; text-transform: uppercase; color: var(--red); margin-bottom: 1.15rem; }
+.intro { max-width: 65ch; font-size: 1.25rem; }
+.intro:last-child { margin-bottom: 0; }
+.family-note { color: #fff; background: var(--red-dark); padding: 2rem; border-top: .5rem solid #c89a57; }
+.family-note p { margin: 0; }
+.family-note .family-title { font-size: 1.65rem; font-weight: 700; line-height: 1.25; margin-bottom: 1.1rem; }
+.family-note .family-subtitle { font-size: 1.05rem; }
+.hero-detail { background: var(--red-dark); color: #fff; }
+.hero-detail .eyebrow, .hero-detail .tagline { color: #ffe1a6; }
+.hero-detail h1 { max-width: 29ch; }
+.event-name { display: block; font-size: 1.7rem; letter-spacing: normal; margin-top: .7rem; }
+.tagline { font-size: 1.35rem; font-weight: 700; }
+.presenter, .convention { margin: .3rem 0 0; }
+.page-nav { padding-block: 1.35rem; border-bottom: 1px solid var(--line); font-size: 1.0625rem; }
+.nav-label { font-weight: 700; margin-bottom: .4rem; }
+.page-nav a { display: inline-block; padding-block: .45rem; }
+.feature { display: grid; grid-template-columns: minmax(8rem, .3fr) minmax(0, 1fr); gap: 2.5rem; padding-block: 3rem; border-bottom: 1px solid var(--line); }
+.feature-number { color: var(--red); font-size: 3.75rem; font-weight: 800; line-height: 1; letter-spacing: -.045em; }
+.feature-word { display: block; margin-top: .85rem; font-size: 1rem; line-height: 1.4; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink); }
+.feature p { max-width: 65ch; }
+.feature .factline { font-weight: 700; color: #49413a; font-size: 1.0625rem; margin-bottom: 1.25rem; }
+.action-link { display: inline-block; padding: .75rem 1rem; margin-top: .4rem; border: 2px solid var(--red); color: var(--red); font-weight: 700; text-align: left; }
+.action-link.primary { background: var(--red); color: #fff; }
+.action-link:hover { background: #f9e8d2; color: var(--red-dark); }
+.feature:last-of-type { border-bottom: 0; }
+.article-content { max-width: 52rem; padding-block: 2.5rem 3rem; }
+.article-content > .introduction p { max-width: 65ch; }
+.challenge { font-size: 1.3rem; font-weight: 700; }
+.article-content section { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+.options, .prizes { padding-left: 1.5rem; margin-block: 1rem 1.5rem; }
+.options li, .prizes li { margin-bottom: 1rem; padding-left: .2rem; }
+.dairy-note, .note { padding: 1.2rem 1.4rem; background: var(--cream); border-left: .3rem solid var(--red); }
+dl { margin: 1.25rem 0 1.5rem; }
+dl > div { margin-bottom: 1.25rem; }
+dt { font-weight: 700; }
+dd { margin: .25rem 0 0; }
+.price-list > div { padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); }
+.price-list > div:last-child { padding-bottom: 0; border-bottom: 0; }
+.price { display: block; color: var(--red); font-weight: 700; margin-bottom: .3rem; }
+.contact { padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.bottom-link { margin-top: 2.5rem; }
+.site-footer { color: #fff; background: #242321; padding-block: 2.5rem; }
+.site-footer a { color: #ffe1a6; }
+.site-footer .footer-title { font-weight: 700; font-size: 1.25rem; }
+.site-footer p { max-width: 65ch; }
+.site-footer p:last-child { margin-bottom: 0; }
+.footer-meta { font-size: 1rem; color: #eee4d4; }
+@media (max-width: 56rem) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .family-note { max-width: 40rem; }
+  .masthead { align-items: flex-start; }
+  h1 { font-size: 2.65rem; }
+}
+@media (max-width: 40rem) {
+  .wrap { width: min(100% - 2rem, 72rem); }
+  .masthead { gap: 1rem; padding-block: 1.1rem; }
+  .brand { display: block; }
+  .brand-mark { display: block; width: fit-content; white-space: nowrap; font-size: 1.5rem; padding: 0 0 .35rem; margin-bottom: .45rem; border-right: 0; border-bottom: .15rem solid var(--red); }
+  .brand-name { display: block; }
+  .site-nav ul { gap: .3rem 1rem; }
+  .hero { padding-block: 2.25rem; }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.75rem; }
+  .event-name { font-size: 1.4rem; }
+  .feature { grid-template-columns: minmax(0, 1fr); gap: 1rem; padding-block: 2.25rem; }
+  .feature-number { font-size: 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; }
+  .feature-word { margin-top: 0; }
+  .family-note { padding: 1.5rem; }
+  .article-content { padding-block: 2rem; }
+  .page-nav ul { display: block; }
+  .page-nav li + li { margin-top: .2rem; }
+}
+@media (forced-colors: active) {
+  .hero, .family-note, .site-footer, .note, .dairy-note { border: 1px solid CanvasText; }
+  a:focus, [tabindex='-1']:focus { outline-color: Highlight; }
+  .action-link { border-color: LinkText; }
+  .site-nav a[aria-current='page'] { text-decoration: underline double; }
+}
+@media print {
+  body { font-size: 11pt; color: #000; background: #fff; }
+  .wrap { width: 100%; max-width: none; }
+  .site-header, .site-nav, .page-nav, .skip-link, .bottom-link, .feature-number, .family-note { display: none; }
+  .hero, .site-footer { background: #fff; color: #000; padding-block: 1rem; border: 0; }
+  .hero-grid, .feature { display: block; }
+  .hero .eyebrow, .hero .tagline, .price, .site-footer a, .footer-meta, h2, a { color: #000; }
+  h1 { font-size: 24pt; max-width: none; }
+  h2 { font-size: 18pt; }
+  h3 { font-size: 14pt; }
+  .feature { padding-block: 1rem; }
+  .article-content { max-width: none; padding: 0; }
+  .article-content section { margin-top: 1.2rem; padding-top: 1rem; }
+  .action-link, .action-link.primary { background: #fff; color: #000; border: 0; padding: 0; }
+  h1, h2, h3, dt { break-after: avoid; }
+  dl > div, li { break-inside: avoid; }
+  .note, .dairy-note { background: #fff; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap masthead">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">MIABS</span><span class="brand-name">Michigan Association<br> of Blind Students<span> (MIABS)</span></span></a>
+    <nav class="site-nav" aria-label="Main navigation"><ul role="list"><li><a href="index.html">Convention home</a></li>
+<li><a href="marching-into-the-fire.html">Marching into the Fire</a></li>
+<li><a href="michigan-mosaic.html" aria-current="page">Michigan Mosaic</a></li></ul></nav>
+  </div>
+</header>
+<main id="main-content" tabindex="-1">
+<header class="hero hero-detail">
+  <div class="wrap">
+    <p class="eyebrow">Convention 2026 time capsule</p>
+    <h1>The Michigan Mosaic</h1>
+    <p class="tagline">Preserve the Voices. Cherish the Moments. Own the Memories.</p>
+    <p class="presenter">A MIABS and At Large collaboration</p>
+    <p class="convention">2026 NFB of Michigan State Convention</p>
+  </div>
+</header>
+<nav class="page-nav wrap" aria-label="On this page">
+  <p class="nav-label">Explore the Michigan Mosaic</p>
+  <ul role="list">
+    <li><a href="#submissions">Add your voice</a></li>
+    <li><a href="#soundtracks">Soundtrack options</a></li>
+    <li><a href="#keepsakes">Order a keepsake</a></li>
+    <li><a href="#bundles">Contributor bundles</a></li>
+    <li><a href="#reserve">Early bird and contact</a></li>
+  </ul>
+</nav>
+<div class="article-content wrap">
+  <div class="introduction">
+    <p>Every state convention leaves an unmistakable mark on our Federation family. It lives in the electric energy of the banquet hall, the passionate floor debates, the heartfelt hallway reunions, and the laughter shared late into the night. But as the years move forward, memory can fade—unless we preserve it.</p>
+    <p>The Michigan Mosaic is our living audio and visual time capsule of the 2026 NFB of Michigan State Convention. For our community, audio is our native format—the cadence of a mentor’s advice, a student’s first convention reflection, or a lifelong friend’s cheer carries a depth that ordinary scrapbooks simply cannot match.</p>
+    <p>Don’t let these irreplaceable memories slip away. Sit back, be part of the story, and let us do all the editing, sound engineering, and visual assembly for you. Ten, twenty, or thirty years from now, press play and remember exactly who we were, what we built, and where our movement is headed next.</p>
+  </div>
+  <section aria-labelledby="submissions">
+    <h2 id="submissions" tabindex="-1">Add Your Voice to the Mosaic</h2>
+    <p>Step up to the mic and cement your voice into Federation history!</p>
+    <dl class="price-list">
+      <div>
+        <dt>Shout-Out / Memory Note — up to 45 seconds</dt>
+        <dd><span class="price">$3 each, or 2 for $5</span>Send a quick personal dedication, share an inside joke, or honor a mentor.</dd>
+      </div>
+      <div>
+        <dt>Standard Audio Reflection — up to 90 seconds</dt>
+        <dd><span class="price">$5</span>Share a meaningful story, personal milestone, or reflection on your convention experience.</dd>
+      </div>
+      <div>
+        <dt>Extended Feature Recording — up to 3 minutes</dt>
+        <dd><span class="price">$10</span>Perfect for duos, extended storytelling, or heartfelt musical tributes.</dd>
+      </div>
+      <div>
+        <dt>Chapter, Division &amp; Group Feature — up to 4 minutes</dt>
+        <dd><span class="price">$15</span>Showcase your local chapter pride, introduce your board, or celebrate your division’s collective impact.</dd>
+      </div>
+    </dl>
+  </section>
+  <section aria-labelledby="soundtracks">
+    <h2 id="soundtracks" tabindex="-1">Custom &amp; Original Soundtrack Options</h2>
+    <p>Every track in the finished production will feature 100% original, copyright-cleared music produced by Treasurer Danielle Agajan.</p>
+    <dl class="price-list">
+      <div>
+        <dt>Direct the Vision</dt>
+        <dd><span class="price">$3</span>Give Danielle your preferred genre, tempo, or mood, and have custom original background music composed to fit your message.</dd>
+      </div>
+      <div>
+        <dt>Feature Your Own Original Music</dt>
+        <dd><span class="price">$5</span>Submit your own self-composed or performed track to back your spoken recording or be highlighted in the showcase.</dd>
+      </div>
+    </dl>
+  </section>
+  <section aria-labelledby="keepsakes">
+    <h2 id="keepsakes" tabindex="-1">Order the Completed Keepsake</h2>
+    <p>Select the format that fits your style. For those who want visual moments alongside sound, our video montage layers convention photos right over top of the audio track.</p>
+    <dl class="price-list">
+      <div>
+        <dt>Audio-Only Keepsake</dt>
+        <dd><span class="price">$10</span>A fully mixed, accessible digital audio album.</dd>
+      </div>
+      <div>
+        <dt>Visual Collage with Audio</dt>
+        <dd><span class="price">$20</span>The full audio experience paired with a rolling photographic montage capturing candid faces, meetings, and hall moments from Grand Rapids.</dd>
+      </div>
+      <div>
+        <dt>All-Access Bundle — both formats</dt>
+        <dd><span class="price">$25</span>Receive both the dedicated audio album and the full video montage download.</dd>
+      </div>
+    </dl>
+  </section>
+  <section aria-labelledby="bundles">
+    <h2 id="bundles" tabindex="-1">Contributor Bundles: Record &amp; Own</h2>
+    <p>Lock in your recording and secure your copy of the finished project in one easy step:</p>
+    <dl class="price-list">
+      <div><dt>90-Second Recording + Pre-Paid Audio Keepsake</dt><dd><span class="price">$12 — save $3</span></dd></div>
+      <div><dt>90-Second Recording + Pre-Paid Video Collage</dt><dd><span class="price">$22 — save $3</span></dd></div>
+      <div><dt>90-Second Recording + Pre-Paid All-Access Bundle</dt><dd><span class="price">$27 — save $3</span></dd></div>
+    </dl>
+  </section>
+  <section aria-labelledby="reserve">
+    <h2 id="reserve" tabindex="-1">Early Bird Discount: Secure Your Spot</h2>
+    <p>Save money and guarantee your recording slot before the rush of convention weekend begins! Pre-register your submission or pre-order your keepsake package <strong>before <time datetime="2026-11-05">November 5, 2026</time></strong> to claim an exclusive early-bird discount.</p>
+    <div class="note">
+      <p><strong>Contact Danielle Agajan to reserve a recording, order a keepsake, or ask about the early-bird discount.</strong></p>
+      <p>Email: <a href="mailto:miabs.treasurer@gmail.com">miabs.treasurer@gmail.com</a><br>Phone / text: <a href="tel:+12694549095">(269) 454-9095</a></p>
+    </div>
+    <p style="margin-top: 1.5rem;">Proceeds directly support student and At Large programming, convention initiatives, and future member assistance for events like Washington Seminar. Build the mosaic with us!</p>
+  </section>
+  <p class="bottom-link"><a href="index.html">Back to all MIABS convention activities</a></p>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-title">Michigan Association of Blind Students</p>
+    <p>Raising expectations. Building connections. Living the lives we want.</p>
+    <p class="footer-meta">2026 National Federation of the Blind of Michigan State Convention</p>
+    <p>Questions about these activities? Contact Danielle at <a href="mailto:miabs.treasurer@gmail.com">miabs.treasurer@gmail.com</a> or <a href="tel:+12694549095">(269) 454-9095</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

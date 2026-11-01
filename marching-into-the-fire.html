@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Join the MIABS Hot Salsa Challenge on Thursday, November 5, 2026. Explore contestant and spectator options, prizes, event details, and registration.">
+  <meta name="color-scheme" content="light">
+  <title>Marching into the Fire | MIABS Convention 2026</title>
+  <style>
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: #242321;
+  background: #f3efe8;
+  --ink: #242321;
+  --red: #8b2318;
+  --red-dark: #581b16;
+  --cream: #fff9ed;
+  --line: #c4b7a6;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 1.1875rem; line-height: 1.65; overflow-wrap: anywhere; }
+a { color: var(--red); text-decoration: underline; text-underline-offset: .2em; text-decoration-thickness: .09em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: .16em; }
+a:focus, [tabindex='-1']:focus { outline: .2rem solid #005fcc; outline-offset: .25rem; }
+a:focus { color: #171717 !important; background: #ffeb99 !important; text-decoration: underline; }
+p { margin: 0 0 1.1rem; }
+h1, h2, h3 { line-height: 1.2; text-wrap: balance; overflow-wrap: anywhere; }
+h1 { margin: 0 0 1.35rem; font-size: 3.1rem; letter-spacing: -.035em; max-width: 23ch; }
+h2 { margin: 0 0 1rem; color: var(--red-dark); font-size: 2rem; letter-spacing: -.02em; }
+h3 { margin: 1.8rem 0 .8rem; font-size: 1.4rem; }
+[id] { scroll-margin-top: 1.5rem; }
+.wrap { width: min(100% - 3rem, 72rem); margin-inline: auto; }
+.skip-link { position: absolute; left: 1rem; top: .65rem; transform: translateY(-250%); z-index: 10; padding: .75rem 1rem; background: #fff; }
+.skip-link:focus { position: fixed; transform: none; }
+.site-header { background: #fff; border-top: .5rem solid var(--red); border-bottom: 1px solid var(--line); }
+.masthead { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem 2rem; padding-block: 1.5rem; }
+.brand { display: flex; align-items: center; gap: 1rem; color: var(--ink); text-decoration: none; max-width: 28rem; }
+.brand-mark { font-size: 1.65rem; font-weight: 800; letter-spacing: -.04em; padding-right: 1rem; border-right: .2rem solid var(--red); color: var(--red); }
+.brand-name { font-size: 1rem; font-weight: 700; line-height: 1.35; }
+.site-nav ul, .page-nav ul { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; list-style: none; padding: 0; margin: 0; }
+.site-nav { font-size: 1rem; }
+.site-nav a { display: inline-block; padding: .6rem .1rem; font-weight: 700; color: var(--ink); }
+.site-nav a[aria-current='page'] { color: var(--red); text-decoration-thickness: .2em; }
+main { background: #fff; }
+.hero { padding-block: 3.6rem 3rem; border-bottom: .35rem solid var(--red); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, .44fr); gap: 3rem; align-items: center; }
+.eyebrow { font-size: 1rem; font-weight: 700; letter-spacing: .065em; text-transform: uppercase; color: var(--red); margin-bottom: 1.15rem; }
+.intro { max-width: 65ch; font-size: 1.25rem; }
+.intro:last-child { margin-bottom: 0; }
+.family-note { color: #fff; background: var(--red-dark); padding: 2rem; border-top: .5rem solid #c89a57; }
+.family-note p { margin: 0; }
+.family-note .family-title { font-size: 1.65rem; font-weight: 700; line-height: 1.25; margin-bottom: 1.1rem; }
+.family-note .family-subtitle { font-size: 1.05rem; }
+.hero-detail { background: var(--red-dark); color: #fff; }
+.hero-detail .eyebrow, .hero-detail .tagline { color: #ffe1a6; }
+.hero-detail h1 { max-width: 29ch; }
+.event-name { display: block; font-size: 1.7rem; letter-spacing: normal; margin-top: .7rem; }
+.tagline { font-size: 1.35rem; font-weight: 700; }
+.presenter, .convention { margin: .3rem 0 0; }
+.page-nav { padding-block: 1.35rem; border-bottom: 1px solid var(--line); font-size: 1.0625rem; }
+.nav-label { font-weight: 700; margin-bottom: .4rem; }
+.page-nav a { display: inline-block; padding-block: .45rem; }
+.feature { display: grid; grid-template-columns: minmax(8rem, .3fr) minmax(0, 1fr); gap: 2.5rem; padding-block: 3rem; border-bottom: 1px solid var(--line); }
+.feature-number { color: var(--red); font-size: 3.75rem; font-weight: 800; line-height: 1; letter-spacing: -.045em; }
+.feature-word { display: block; margin-top: .85rem; font-size: 1rem; line-height: 1.4; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink); }
+.feature p { max-width: 65ch; }
+.feature .factline { font-weight: 700; color: #49413a; font-size: 1.0625rem; margin-bottom: 1.25rem; }
+.action-link { display: inline-block; padding: .75rem 1rem; margin-top: .4rem; border: 2px solid var(--red); color: var(--red); font-weight: 700; text-align: left; }
+.action-link.primary { background: var(--red); color: #fff; }
+.action-link:hover { background: #f9e8d2; color: var(--red-dark); }
+.feature:last-of-type { border-bottom: 0; }
+.article-content { max-width: 52rem; padding-block: 2.5rem 3rem; }
+.article-content > .introduction p { max-width: 65ch; }
+.challenge { font-size: 1.3rem; font-weight: 700; }
+.article-content section { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+.options, .prizes { padding-left: 1.5rem; margin-block: 1rem 1.5rem; }
+.options li, .prizes li { margin-bottom: 1rem; padding-left: .2rem; }
+.dairy-note, .note { padding: 1.2rem 1.4rem; background: var(--cream); border-left: .3rem solid var(--red); }
+dl { margin: 1.25rem 0 1.5rem; }
+dl > div { margin-bottom: 1.25rem; }
+dt { font-weight: 700; }
+dd { margin: .25rem 0 0; }
+.price-list > div { padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); }
+.price-list > div:last-child { padding-bottom: 0; border-bottom: 0; }
+.price { display: block; color: var(--red); font-weight: 700; margin-bottom: .3rem; }
+.contact { padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.bottom-link { margin-top: 2.5rem; }
+.site-footer { color: #fff; background: #242321; padding-block: 2.5rem; }
+.site-footer a { color: #ffe1a6; }
+.site-footer .footer-title { font-weight: 700; font-size: 1.25rem; }
+.site-footer p { max-width: 65ch; }
+.site-footer p:last-child { margin-bottom: 0; }
+.footer-meta { font-size: 1rem; color: #eee4d4; }
+@media (max-width: 56rem) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .family-note { max-width: 40rem; }
+  .masthead { align-items: flex-start; }
+  h1 { font-size: 2.65rem; }
+}
+@media (max-width: 40rem) {
+  .wrap { width: min(100% - 2rem, 72rem); }
+  .masthead { gap: 1rem; padding-block: 1.1rem; }
+  .brand { display: block; }
+  .brand-mark { display: block; width: fit-content; white-space: nowrap; font-size: 1.5rem; padding: 0 0 .35rem; margin-bottom: .45rem; border-right: 0; border-bottom: .15rem solid var(--red); }
+  .brand-name { display: block; }
+  .site-nav ul { gap: .3rem 1rem; }
+  .hero { padding-block: 2.25rem; }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.75rem; }
+  .event-name { font-size: 1.4rem; }
+  .feature { grid-template-columns: minmax(0, 1fr); gap: 1rem; padding-block: 2.25rem; }
+  .feature-number { font-size: 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; }
+  .feature-word { margin-top: 0; }
+  .family-note { padding: 1.5rem; }
+  .article-content { padding-block: 2rem; }
+  .page-nav ul { display: block; }
+  .page-nav li + li { margin-top: .2rem; }
+}
+@media (forced-colors: active) {
+  .hero, .family-note, .site-footer, .note, .dairy-note { border: 1px solid CanvasText; }
+  a:focus, [tabindex='-1']:focus { outline-color: Highlight; }
+  .action-link { border-color: LinkText; }
+  .site-nav a[aria-current='page'] { text-decoration: underline double; }
+}
+@media print {
+  body { font-size: 11pt; color: #000; background: #fff; }
+  .wrap { width: 100%; max-width: none; }
+  .site-header, .site-nav, .page-nav, .skip-link, .bottom-link, .feature-number, .family-note { display: none; }
+  .hero, .site-footer { background: #fff; color: #000; padding-block: 1rem; border: 0; }
+  .hero-grid, .feature { display: block; }
+  .hero .eyebrow, .hero .tagline, .price, .site-footer a, .footer-meta, h2, a { color: #000; }
+  h1 { font-size: 24pt; max-width: none; }
+  h2 { font-size: 18pt; }
+  h3 { font-size: 14pt; }
+  .feature { padding-block: 1rem; }
+  .article-content { max-width: none; padding: 0; }
+  .article-content section { margin-top: 1.2rem; padding-top: 1rem; }
+  .action-link, .action-link.primary { background: #fff; color: #000; border: 0; padding: 0; }
+  h1, h2, h3, dt { break-after: avoid; }
+  dl > div, li { break-inside: avoid; }
+  .note, .dairy-note { background: #fff; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap masthead">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">MIABS</span><span class="brand-name">Michigan Association<br> of Blind Students<span> (MIABS)</span></span></a>
+    <nav class="site-nav" aria-label="Main navigation"><ul role="list"><li><a href="index.html">Convention home</a></li>
+<li><a href="marching-into-the-fire.html" aria-current="page">Marching into the Fire</a></li>
+<li><a href="michigan-mosaic.html">Michigan Mosaic</a></li></ul></nav>
+  </div>
+</header>
+<main id="main-content" tabindex="-1">
+<header class="hero hero-detail">
+      <div class="wrap"><h1>Marching into the Fire: <span class="event-name">The MIABS Hot Salsa Challenge</span>
+      </h1>
+      <p class="tagline">Where Philosophy Meets Pure Scoville</p>
+      <p class="presenter">Presented by the Michigan Association of Blind Students</p>
+      <p class="convention">2026 NFB of Michigan State Convention</p>
+    </div></header>
+
+    
+<nav aria-label="On this page" class="page-nav wrap">
+        <p class="nav-label">On this page</p>
+        <ul role="list">
+          <li><a href="#contenders">The Contender's Arena</a></li>
+          <li><a href="#spectators">The Spectator Experience</a></li>
+          <li><a href="#event-details">Event Details</a></li>
+          <li><a href="#registration">Registration</a></li>
+        </ul>
+      </nav>
+
+      
+<div class="article-content wrap">
+      <div class="introduction">
+        <p class="challenge">Think you can stand the heat, or will Federation philosophy melt right off your tongue?</p>
+        <p>Grab a front-row seat as the Michigan Association of Blind Students drags our bravest contenders through Seven Layers of Salsa Purgatory. We are trading standard chicken wings for gourmet chips and cranking the Scoville scale from polite sweet heat to pure, unadulterated fire.</p>
+        <p>Between bites of blistering Jose Madrid gourmet salsa, our contenders will face hard-hitting questions: getting-to-know-you banter, deep-cut NFB trivia, and spontaneous discussions on Federation philosophy while actively fighting back tears.</p>
+        <p>Will they live the life they want, or will they be begging for dairy before Level 4? There is only one way to find out.</p>
+      </div>
+
+      <section aria-labelledby="contenders">
+        <h2 id="contenders" tabindex="-1">The Contender’s Arena</h2>
+        <p>Step up to the hot seat, claim your chips, and test your mettle against the flame.</p>
+        <ul class="options">
+          <li><strong>$15 Entry:</strong> Take the Hot Seat and battle through all 7 tiers of fire.</li>
+          <li><strong>$20 VIP Contender Bundle:</strong> Compete in the challenge PLUS get a $10 coupon toward any jar of your choice in our Jose Madrid Salsa Fundraiser!</li>
+        </ul>
+
+        <h3>The Spoils of Victory:</h3>
+        <ul class="prizes">
+          <li><span aria-hidden="true">🥇 </span><strong>1st Place Champion:</strong> The coveted Grand Champion Trophy + $25 Cash!</li>
+          <li><span aria-hidden="true">🥈 </span><strong>2nd Place:</strong> A bag of gourmet Detroit Mix-ins + a bag of Double Good Popcorn.</li>
+          <li><span aria-hidden="true">🥉 </span><strong>3rd Place:</strong> A bag of gourmet Detroit Mix-ins + a bag of Double Good Popcorn.</li>
+          <li><span aria-hidden="true">🍼 </span><strong>Last Place / The Surrender Award:</strong> A bowl of fancy cold ice cream to soothe your bruised pride, paired with our infamous Special Gag Trophy!</li>
+        </ul>
+        <p class="dairy-note">(Cold dairy products—both sugar and sugar-free—will be waiting... but ONLY once you finish the gauntlet or wave the white napkin!)</p>
+      </section>
+
+      <section aria-labelledby="spectators">
+        <h2 id="spectators" tabindex="-1">The Spectator Experience</h2>
+        <p>Not ready to set your mouth on fire? Watch the sweat from the safety of the crowd!</p>
+        <ul class="options">
+          <li><strong>FREE Admission:</strong> Come cheer, laugh, and get automatically entered to win sweet Door Prizes! (Donations gratefully accepted).</li>
+          <li><strong>$10 Taster Pass:</strong> Get your own chip basket, sample along with the exact same salsas our contenders are braving, and stay eligible for door prizes.</li>
+          <li><strong>$15 VIP Taster Package:</strong> The complete salsa sampler, chip basket, door prize entry, PLUS a $10 coupon toward a jar of Jose Madrid salsa to take home!</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="event-details">
+        <h2 id="event-details" tabindex="-1">Event Details</h2>
+        <dl>
+          <div>
+            <dt>Date:</dt>
+            <dd><time datetime="2026-11-05">Thursday, November 5, 2026</time></dd>
+          </div>
+          <div>
+            <dt>Doors Open:</dt>
+            <dd><time datetime="21:00">9:00 PM</time> (Snag your seat, grab your flights, and pick your favorites)</dd>
+          </div>
+          <div>
+            <dt>Event Starts:</dt>
+            <dd><time datetime="21:30">9:30 PM</time> Sharp</dd>
+          </div>
+          <div>
+            <dt>Location:</dt>
+            <dd>MIABS Sweet- Room 106</dd>
+          </div>
+        </dl>
+        <p>All event times are Eastern Time.</p><p><strong>Payment Methods Accepted:</strong> Cash &amp; Digital Apps (Venmo / Cash App / Zelle / tap to pay)</p>
+      </section>
+
+      <section aria-labelledby="registration">
+        <h2 id="registration" tabindex="-1">Registration</h2>
+        <p><a href="https://www.zeffy.com/en-US/ticketing/miabs-marching-into-the-fire" class="action-link primary">Register for the MIABS Hot Salsa Challenge</a></p>
+        <p class="contact"><strong>Questions:</strong> Contact Danielle at <a href="mailto:miabs.treasurer@gmail.com">miabs.treasurer@gmail.com</a> or <a href="tel:+12694549095">(269) 454-9095</a></p>
+      </section>
+    <p class="bottom-link"><a href="index.html">Back to all MIABS convention activities</a></p></div>
+  
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-title">Michigan Association of Blind Students</p>
+    <p>Raising expectations. Building connections. Living the lives we want.</p>
+    <p class="footer-meta">2026 National Federation of the Blind of Michigan State Convention</p>
+    <p>Questions about these activities? Contact Danielle at <a href="mailto:miabs.treasurer@gmail.com">miabs.treasurer@gmail.com</a> or <a href="tel:+12694549095">(269) 454-9095</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

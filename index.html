@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MIABS events and information for the 2026 NFB of Michigan State Convention: the Hot Salsa Challenge, Michigan Mosaic, and exhibit hall salsa fundraiser.">
+  <meta name="color-scheme" content="light">
+  <title>MIABS Convention Events | NFB of Michigan 2026</title>
+  <style>
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: #242321;
+  background: #f3efe8;
+  --ink: #242321;
+  --red: #8b2318;
+  --red-dark: #581b16;
+  --cream: #fff9ed;
+  --line: #c4b7a6;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 1.1875rem; line-height: 1.65; overflow-wrap: anywhere; }
+a { color: var(--red); text-decoration: underline; text-underline-offset: .2em; text-decoration-thickness: .09em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: .16em; }
+a:focus, [tabindex='-1']:focus { outline: .2rem solid #005fcc; outline-offset: .25rem; }
+a:focus { color: #171717 !important; background: #ffeb99 !important; text-decoration: underline; }
+p { margin: 0 0 1.1rem; }
+h1, h2, h3 { line-height: 1.2; text-wrap: balance; overflow-wrap: anywhere; }
+h1 { margin: 0 0 1.35rem; font-size: 3.1rem; letter-spacing: -.035em; max-width: 23ch; }
+h2 { margin: 0 0 1rem; color: var(--red-dark); font-size: 2rem; letter-spacing: -.02em; }
+h3 { margin: 1.8rem 0 .8rem; font-size: 1.4rem; }
+[id] { scroll-margin-top: 1.5rem; }
+.wrap { width: min(100% - 3rem, 72rem); margin-inline: auto; }
+.skip-link { position: absolute; left: 1rem; top: .65rem; transform: translateY(-250%); z-index: 10; padding: .75rem 1rem; background: #fff; }
+.skip-link:focus { position: fixed; transform: none; }
+.site-header { background: #fff; border-top: .5rem solid var(--red); border-bottom: 1px solid var(--line); }
+.masthead { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem 2rem; padding-block: 1.5rem; }
+.brand { display: flex; align-items: center; gap: 1rem; color: var(--ink); text-decoration: none; max-width: 28rem; }
+.brand-mark { font-size: 1.65rem; font-weight: 800; letter-spacing: -.04em; padding-right: 1rem; border-right: .2rem solid var(--red); color: var(--red); }
+.brand-name { font-size: 1rem; font-weight: 700; line-height: 1.35; }
+.site-nav ul, .page-nav ul { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; list-style: none; padding: 0; margin: 0; }
+.site-nav { font-size: 1rem; }
+.site-nav a { display: inline-block; padding: .6rem .1rem; font-weight: 700; color: var(--ink); }
+.site-nav a[aria-current='page'] { color: var(--red); text-decoration-thickness: .2em; }
+main { background: #fff; }
+.hero { padding-block: 3.6rem 3rem; border-bottom: .35rem solid var(--red); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, .44fr); gap: 3rem; align-items: center; }
+.eyebrow { font-size: 1rem; font-weight: 700; letter-spacing: .065em; text-transform: uppercase; color: var(--red); margin-bottom: 1.15rem; }
+.intro { max-width: 65ch; font-size: 1.25rem; }
+.intro:last-child { margin-bottom: 0; }
+.family-note { color: #fff; background: var(--red-dark); padding: 2rem; border-top: .5rem solid #c89a57; }
+.family-note p { margin: 0; }
+.family-note .family-title { font-size: 1.65rem; font-weight: 700; line-height: 1.25; margin-bottom: 1.1rem; }
+.family-note .family-subtitle { font-size: 1.05rem; }
+.hero-detail { background: var(--red-dark); color: #fff; }
+.hero-detail .eyebrow, .hero-detail .tagline { color: #ffe1a6; }
+.hero-detail h1 { max-width: 29ch; }
+.event-name { display: block; font-size: 1.7rem; letter-spacing: normal; margin-top: .7rem; }
+.tagline { font-size: 1.35rem; font-weight: 700; }
+.presenter, .convention { margin: .3rem 0 0; }
+.page-nav { padding-block: 1.35rem; border-bottom: 1px solid var(--line); font-size: 1.0625rem; }
+.nav-label { font-weight: 700; margin-bottom: .4rem; }
+.page-nav a { display: inline-block; padding-block: .45rem; }
+.feature { display: grid; grid-template-columns: minmax(8rem, .3fr) minmax(0, 1fr); gap: 2.5rem; padding-block: 3rem; border-bottom: 1px solid var(--line); }
+.feature-number { color: var(--red); font-size: 3.75rem; font-weight: 800; line-height: 1; letter-spacing: -.045em; }
+.feature-word { display: block; margin-top: .85rem; font-size: 1rem; line-height: 1.4; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink); }
+.feature p { max-width: 65ch; }
+.feature .factline { font-weight: 700; color: #49413a; font-size: 1.0625rem; margin-bottom: 1.25rem; }
+.action-link { display: inline-block; padding: .75rem 1rem; margin-top: .4rem; border: 2px solid var(--red); color: var(--red); font-weight: 700; text-align: left; }
+.action-link.primary { background: var(--red); color: #fff; }
+.action-link:hover { background: #f9e8d2; color: var(--red-dark); }
+.feature:last-of-type { border-bottom: 0; }
+.article-content { max-width: 52rem; padding-block: 2.5rem 3rem; }
+.article-content > .introduction p { max-width: 65ch; }
+.challenge { font-size: 1.3rem; font-weight: 700; }
+.article-content section { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+.options, .prizes { padding-left: 1.5rem; margin-block: 1rem 1.5rem; }
+.options li, .prizes li { margin-bottom: 1rem; padding-left: .2rem; }
+.dairy-note, .note { padding: 1.2rem 1.4rem; background: var(--cream); border-left: .3rem solid var(--red); }
+dl { margin: 1.25rem 0 1.5rem; }
+dl > div { margin-bottom: 1.25rem; }
+dt { font-weight: 700; }
+dd { margin: .25rem 0 0; }
+.price-list > div { padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); }
+.price-list > div:last-child { padding-bottom: 0; border-bottom: 0; }
+.price { display: block; color: var(--red); font-weight: 700; margin-bottom: .3rem; }
+.contact { padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.bottom-link { margin-top: 2.5rem; }
+.site-footer { color: #fff; background: #242321; padding-block: 2.5rem; }
+.site-footer a { color: #ffe1a6; }
+.site-footer .footer-title { font-weight: 700; font-size: 1.25rem; }
+.site-footer p { max-width: 65ch; }
+.site-footer p:last-child { margin-bottom: 0; }
+.footer-meta { font-size: 1rem; color: #eee4d4; }
+@media (max-width: 56rem) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .family-note { max-width: 40rem; }
+  .masthead { align-items: flex-start; }
+  h1 { font-size: 2.65rem; }
+}
+@media (max-width: 40rem) {
+  .wrap { width: min(100% - 2rem, 72rem); }
+  .masthead { gap: 1rem; padding-block: 1.1rem; }
+  .brand { display: block; }
+  .brand-mark { display: block; width: fit-content; white-space: nowrap; font-size: 1.5rem; padding: 0 0 .35rem; margin-bottom: .45rem; border-right: 0; border-bottom: .15rem solid var(--red); }
+  .brand-name { display: block; }
+  .site-nav ul { gap: .3rem 1rem; }
+  .hero { padding-block: 2.25rem; }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.75rem; }
+  .event-name { font-size: 1.4rem; }
+  .feature { grid-template-columns: minmax(0, 1fr); gap: 1rem; padding-block: 2.25rem; }
+  .feature-number { font-size: 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; }
+  .feature-word { margin-top: 0; }
+  .family-note { padding: 1.5rem; }
+  .article-content { padding-block: 2rem; }
+  .page-nav ul { display: block; }
+  .page-nav li + li { margin-top: .2rem; }
+}
+@media (forced-colors: active) {
+  .hero, .family-note, .site-footer, .note, .dairy-note { border: 1px solid CanvasText; }
+  a:focus, [tabindex='-1']:focus { outline-color: Highlight; }
+  .action-link { border-color: LinkText; }
+  .site-nav a[aria-current='page'] { text-decoration: underline double; }
+}
+@media print {
+  body { font-size: 11pt; color: #000; background: #fff; }
+  .wrap { width: 100%; max-width: none; }
+  .site-header, .site-nav, .page-nav, .skip-link, .bottom-link, .feature-number, .family-note { display: none; }
+  .hero, .site-footer { background: #fff; color: #000; padding-block: 1rem; border: 0; }
+  .hero-grid, .feature { display: block; }
+  .hero .eyebrow, .hero .tagline, .price, .site-footer a, .footer-meta, h2, a { color: #000; }
+  h1 { font-size: 24pt; max-width: none; }
+  h2 { font-size: 18pt; }
+  h3 { font-size: 14pt; }
+  .feature { padding-block: 1rem; }
+  .article-content { max-width: none; padding: 0; }
+  .article-content section { margin-top: 1.2rem; padding-top: 1rem; }
+  .action-link, .action-link.primary { background: #fff; color: #000; border: 0; padding: 0; }
+  h1, h2, h3, dt { break-after: avoid; }
+  dl > div, li { break-inside: avoid; }
+  .note, .dairy-note { background: #fff; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap masthead">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">MIABS</span><span class="brand-name">Michigan Association<br> of Blind Students<span> (MIABS)</span></span></a>
+    <nav class="site-nav" aria-label="Main navigation"><ul role="list"><li><a href="index.html" aria-current="page">Convention home</a></li>
+<li><a href="marching-into-the-fire.html">Marching into the Fire</a></li>
+<li><a href="michigan-mosaic.html">Michigan Mosaic</a></li></ul></nav>
+  </div>
+</header>
+<main id="main-content" tabindex="-1">
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">2026 NFB of Michigan State Convention</p>
+      <h1>Connect with MIABS<br> at State Convention</h1>
+      <p class="intro">Join the Michigan Association of Blind Students in Grand Rapids for bold flavors, shared stories, and time with our Federation family. Find your next convention memory here.</p>
+    </div>
+    <aside class="family-note" aria-label="Our Federation community">
+      <p class="family-title">Our voices.<br>Our stories.<br>Our Federation family.</p>
+      <p class="family-subtitle">Come meet our students, make a memory, and help support the work we do together.</p>
+    </aside>
+  </div>
+</header>
+<div class="wrap">
+  <nav class="page-nav" aria-label="On this page">
+    <p class="nav-label">Explore our convention activities</p>
+    <ul role="list">
+      <li><a href="#salsa-challenge">Hot salsa challenge</a></li>
+      <li><a href="#mosaic">Michigan Mosaic</a></li>
+      <li><a href="#salsa-fundraiser">Exhibit hall salsa fundraiser</a></li>
+    </ul>
+  </nav>
+  <section class="feature" aria-labelledby="salsa-challenge">
+    <div class="feature-number" aria-hidden="true">01<span class="feature-word">Bring the heat</span></div>
+    <div>
+      <h2 id="salsa-challenge" tabindex="-1">Marching into the Fire</h2>
+      <p class="factline">Thursday, November 5, 2026 · Doors open at 9:00 PM; challenge starts at 9:30 PM · Room 106</p>
+      <p>Seven salsas, plenty of laughs, and one very brave lineup. Join us for the MIABS Hot Salsa Challenge, where contenders take on hotter bites and questions that bring out their personalities and Federation philosophy. Take the hot seat, taste along, or cheer from the crowd; spectator admission is free. Explore the prizes, contender and taster options, and registration details, and make Thursday night part of your convention story.</p>
+      <a class="action-link primary" href="marching-into-the-fire.html">Explore the Hot Salsa Challenge and registration</a>
+    </div>
+  </section>
+  <section class="feature" aria-labelledby="mosaic">
+    <div class="feature-number" aria-hidden="true">02<span class="feature-word">Share your story</span></div>
+    <div>
+      <h2 id="mosaic" tabindex="-1">The Michigan Mosaic</h2>
+      <p class="factline">Convention 2026 time capsule · A MIABS and At Large collaboration</p>
+      <p>Some convention moments deserve more than a memory. The Michigan Mosaic brings together our voices, photos, stories, and music in an audio and visual time capsule of the 2026 convention. Honor a mentor, celebrate your chapter, share a laugh, or capture what this Federation family means to you. Explore recording options and keepsake packages, and help tell the story we will return to for years.</p>
+      <a class="action-link" href="michigan-mosaic.html">Explore Michigan Mosaic recordings and keepsakes</a>
+    </div>
+  </section>
+  <section class="feature" aria-labelledby="salsa-fundraiser">
+    <div class="feature-number" aria-hidden="true">03<span class="feature-word">Taste &amp; support</span></div>
+    <div>
+      <h2 id="salsa-fundraiser" tabindex="-1">Salsa with a purpose</h2>
+      <p class="factline"><time datetime="2026-11-06">Friday, November 6, 2026</time> · <time datetime="11:00">11:00 AM</time>–<time datetime="17:00">5:00 PM</time> · MIABS table in the exhibit hall</p>
+      <p>Come find your next favorite salsa and help send Michigan’s blind students to Washington Seminar 2027. Visit our exhibit hall table to sample a few of the Jose Madrid salsas we are selling for our fundraiser, meet our students, and enjoy a taste of what we are working toward together. Your support helps students bring their voices to Capitol Hill to advocate for equal opportunity and the lives they want to live. Browse the salsa selection, then stop by to find your favorite.</p>
+      <a class="action-link" href="https://josemadridsalsafundraising.com/shop-1/?page=1">Browse Jose Madrid salsa flavors</a>
+    </div>
+  </section>
+  <p class="footer-meta" style="color: #49413a; padding-bottom: 2rem;">All event times are Eastern Time.</p>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-title">Michigan Association of Blind Students</p>
+    <p>Raising expectations. Building connections. Living the lives we want.</p>
+    <p class="footer-meta">2026 National Federation of the Blind of Michigan State Convention</p>
+    <p>Questions about these activities? Contact Danielle at <a href="mailto:miabs.treasurer@gmail.com">miabs.treasurer@gmail.com</a> or <a href="tel:+12694549095">(269) 454-9095</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
